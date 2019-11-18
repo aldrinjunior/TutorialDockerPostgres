@@ -5,11 +5,13 @@ Primeiramente, vamos entender que o docker não é um serviço de virtualizaçã
 
 Eu sugirio que instalem o docker no Linux, nunca utilizei ele nativamente no windows devido alguns bug que nós já conhecemos, mas se quiserem tentar podem conferir a instalação no link abaixo
 
-LINK DOCKER WINDOWS : 
+LINK DOCKER WINDOWS : https://docs.docker.com/docker-for-windows/install/
 
 Mas para quem não quer criar um dual boot ou deixar de usar o windows, pode baixar a versão do Ubuntu WSL na própia loja da Microsoft e desfrutar dessa distro dentro do windows sem complicações, segue o tutorial de instalação abaixo : 
 
-Link WSL instalation :
+Link WSL instalation : https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+(IMPORTANTE: Precisa ter a versão do Windows 10 atualizada acima da build 1903, se caso não funcionar a instalação acima é só ir nas configs do windows e atualizar, mesmo sendo piratão hehhehhehe)
 
 Após instalar o WSL dentro do windows, vamos instalar o docker dentro do WSL 
 
@@ -37,4 +39,9 @@ E depois para rodar uma imagem :
 docker start nomedocontainer
 
 ============================================================================================================
+
+Agora vamos rodar essa imagem postgres dentro de um projeto da aula, vamos abrir o VSCODE, e na appsettings.json é só criar a string de conexão com as credenciais utitlizadas ali no comando do docker run, que neste caso do tutorial é :
+
+name : some-postgres
+PASSWORD=mysecretpasswor
 
